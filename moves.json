@@ -1,0 +1,39 @@
+{
+    "tackle": {
+        "name": "Tackle",
+        "basePower": 40,
+        "type": "NORMAL",
+        "category": "PHYSICAL",
+        "powerPoints": 40
+    },
+    
+    "ember": {
+        "name": "Ember",
+        "basePower": 40,
+        "type": "FIRE",
+        "category": "SPECIAL",
+        "powerPoints": 25
+    },
+    
+    "dig": {
+        "name": "Dig",
+        "basePower": 80,
+        "type": "GROUND",
+        "category": "PHYSICAL",
+        "powerPoints": 10
+    },
+    "waterGun": {
+        "name": "Water Gun",
+        "basePower": 40,
+        "type": "WATER",
+        "category": "SPECIAL",
+        "powerPoints": 25
+    },
+    "bite": {
+        "name": "Bite",
+        "basePower": 60,
+        "type": "DARK",
+        "category": "PHYSICAL",
+        "powerPoints": 25
+    }
+}

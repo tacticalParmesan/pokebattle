@@ -1,0 +1,48 @@
+{
+	"charmander": {
+		"name": "charmander",
+		"type": "FIRE",
+		"level": 50,
+        "stats": {
+            "hp": 90,
+            "attack": 72,
+            "defense": 63,
+            "specialAttack": 80,
+            "specialDefense": 70,
+            "speed": 85
+        },
+        "sprites": {
+            "spriteFront": "./assets/imgs/charmander.png",
+            "spriteBack": "./assets/imgs/charmander-back.png"
+        },
+        "knownMoves": {
+            "move1": "tackle",
+            "move2": "ember",
+            "move3": "dig"
+        }
+            
+        
+	},
+	"squirtle": {
+		"name": "squirtle",
+		"type": "WATER",
+        "level": 50,
+        "stats": {
+            "hp": 119,
+            "attack": 68,
+            "defense": 85,
+            "specialAttack": 70,
+            "specialDefense": 84,
+            "speed": 63
+        },
+        "sprites": {
+            "spriteFront": "./assets/imgs/squirtle.png",
+            "spriteBack": "./assets/imgs/squirtle-back.png"
+        },
+        "knownMoves": {
+            "move1": "tackle",
+            "move2": "waterGun",
+            "move3": "bite"
+        }
+	}
+}

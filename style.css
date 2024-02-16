@@ -1,0 +1,166 @@
+:root {
+	font-size: 16px;
+}
+
+/* Document
+   ========================================================================== */
+
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+	margin: 0px;
+	padding: 0px;
+	box-sizing: content-box;
+	height: 98vh;
+}
+
+/* Battle Scene
+   ========================================================================== */
+
+.battle-container,
+.display {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+}
+
+.display {
+	align-self: center;
+	border: 4px solid black;
+	border-radius: 8px;
+	min-width: 500px;
+	gap: 2rem;
+}
+
+.poke-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 5rem;
+}
+
+.poke-container.enemy {
+	padding-top: 3.5rem;
+}
+
+.poke-container.player {
+	flex-direction: row-reverse;
+	padding-bottom: 3.5rem;
+}
+
+.info-area {
+	display: flex;
+	flex-direction: column;
+	padding: 0.4rem 1.2rem;
+	border: 2px solid black;
+	border-radius: 6px;
+}
+
+.pokemon-name {
+	text-transform: capitalize;
+	margin: 0px;
+}
+
+/* Sprite look and behaviour
+   ========================================================================== */
+
+.sprite-area {
+	overflow: hidden;
+	width: 96px;
+	height: 96px;
+}
+
+img.sprite {
+	width: 96px;
+	height: 96px;
+	transition: 2s ease;
+}
+
+img.sprite.hitTaken {
+	animation: hit 0.25s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes hit {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+img.sprite.fainted {
+	margin-top: 500px;
+}
+
+/* Healthbar styling
+   ========================================================================== */
+
+.healthbar {
+	width: 100px;
+	height: 6px;
+	background-color: transparent;
+}
+
+.hpbar {
+	background-color: forestgreen;
+	border-radius: 6px;
+}
+
+/* User feedabck and input
+   ========================================================================== */
+
+.hud-area {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.text-box {
+	border: 4px solid black;
+	border-radius: 8px;
+	min-width: 500px;
+	text-align: center;
+	padding: 1.5rem 0rem;
+}
+
+.moves-container {
+	display: flex;
+	justify-content: center;
+	min-height: 4rem;
+	min-width: 500px;
+}
+
+.moves {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	list-style: none;
+	padding: 0px;
+	gap: 2rem;
+}
+
+.move {
+	min-width: 150px;
+	min-height: 60px;
+	border: 2px solid black;
+	border-radius: 6px;
+}
+
+.move:hover {
+	box-shadow: 2px -2px 0px red;
+}
+
+/* Media queries
+   ========================================================================== */
+
+@media screen and (max-width: 600px) {
+	.display,
+	.text-box {
+		min-width: 350px;
+	}
+}

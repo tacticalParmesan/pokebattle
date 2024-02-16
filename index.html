@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script type="module" src="./damage.js"></script>
+		<script type="module" src="./battle.js" defer></script>
+		<script type="module" src="./uiupdate.js"></script>
+		<script type="module" src="./fecthData.js"></script>
+		<link rel="stylesheet" href="style.css" />
+		<title>Pokebattle</title>
+
+		<div class="battle-container">
+			<div class="display">
+				<div class="poke-container enemy">
+					<div class="info-area enemy">
+						<p class="pokemon-name enemy">Pokemon name</p>
+						<span>L: <span class="pokemon-level enemy">50</span></span>
+						<div class="healthbar enemy">
+							<div class="hpbar enemy" style="width: 100px; height: 6px;"></div>
+						</div>
+					</div>
+					<div class="sprite-area">
+						<img class="sprite enemy" src="" alt="SPRITE" />
+					</div>
+				</div>
+				<div class="poke-container player">
+					<div class="info-area player">
+						<p class="pokemon-name player">Pokemon name</p>
+						<span>L: <span class="pokemon-level player">50</span></span>
+						<div class="healthbar player">
+							<div class="hpbar player" style="width: 100px; height: 6px;"></div>
+						</div>
+				</div>
+				<div class="sprite-area">
+					<img class="sprite player" src="" alt="SPRITE"/>
+				</div>
+			</div>
+		</div>
+			<div class="hud-area">
+				<p class="text-box">What is Charmander going to do?</p>
+				<div class="moves-container">
+					<ul class="moves">
+						<li class="move-item"><button class="move move1">move1</button></li>
+						<li class="move-item"><button class="move move2">move2</button></li>
+						<li class="move-item"><button class="move move3">move3</button></li>
+						<li class="move-item"><button class="move move4">move4</button></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</head>
+	<body></body>
+</html>
