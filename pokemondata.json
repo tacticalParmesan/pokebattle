@@ -12,8 +12,8 @@
             "speed": 85
         },
         "sprites": {
-            "spriteFront": "./assets/imgs/charmander.png",
-            "spriteBack": "./assets/imgs/charmander-back.png"
+            "spriteFront": "/pokebattle/assets/imgs/charmander.png",
+            "spriteBack": "/pokebattle/assets/imgs/charmander-back.png"
         },
         "knownMoves": {
             "move1": "tackle",
